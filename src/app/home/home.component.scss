@@ -1,0 +1,116 @@
+@keyframes slide {
+    0%, 100% {
+        margin-left: 0px;
+        padding-right: 12px;
+    }
+
+    50% {
+        margin-left: 12px;
+        padding-right: 0px;
+    }
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+.front-end,
+.back-end {
+    width: 100%;
+    max-width: 486px;
+
+    .screen {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: left;
+        color: #783F8E;
+        margin: 0 5%;
+    }
+}
+
+.cta {
+    margin: 22px 0;
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #4A4063;
+    align-self: center;
+
+    .animation {
+        padding-right: 12px;
+    }
+    
+    &:hover {
+        .animation {
+            animation: slide 1s ease-out infinite;
+        }
+    }
+
+}
+
+.cta-container {
+    width: 100%;
+    text-align: center;
+}
+
+.desktop {
+    display: none;
+}
+
+
+@media (min-width: 625px) {
+    .front-end {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .back-end {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .front-end,
+    .back-end {
+        h2 {
+            margin: 12px 5%;
+        }
+    }
+}
+
+@media (min-width: 1315px) {
+    .front-end,
+    .back-end {
+        margin: 0;
+
+        h2 {
+            margin: 12px auto;
+            text-align: center;
+        }
+
+        width: 50%;
+    }
+
+    .home-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+    }
+}

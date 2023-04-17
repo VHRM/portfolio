@@ -1,0 +1,16 @@
+<div class="navbar">
+    <img class="menu mobile" src="../../assets/images/menu.svg" alt="Menu" srcset="" (click)="toggleMenu()">
+    <img class="logo" src="../../assets/images/header-logo.svg" alt="" srcset="">
+</div>
+
+<div class="menu-backdrop" [ngClass]="{'active': isMenuActive}">
+    <div class="menu-modal">
+        <img class="close" src="../../assets/images/close.svg" alt="" srcset="" (click)="toggleMenu()">
+
+        <ul class="links">
+            <li  *ngFor="let route of routes">
+                <a class="link" [href]="'/' + route.path">{{ route.name }}</a>
+            </li>
+        </ul>
+    </div>
+</div>

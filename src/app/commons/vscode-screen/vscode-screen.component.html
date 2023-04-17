@@ -1,0 +1,17 @@
+<div class="screen">
+    <div class="mac-top">
+        <div class="mac-icons">
+            <div class="button red"></div>
+            <div class="button yellow"></div>
+            <div class="button green"></div>
+        </div>
+        <span></span>
+    </div>
+    <div class="vscode">
+        <ol *ngIf="list && name">
+            <li><span class="pink">const</span><span class="purple"> {{ name }}</span><span class="pink"> = [</span></li>
+            <li *ngFor="let item of list; let i = index"><span class="yellow tab">'{{ item }}'</span><span *ngIf="i < list.length - 1">,</span></li>
+            <li><span class="pink">]</span>;<span class="cursor">|</span></li>
+        </ol>
+    </div>
+</div>

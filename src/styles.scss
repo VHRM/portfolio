@@ -1,8 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-
-body {
+html {
     font-size: 10px;
     font-family: 'Nunito', sans-serif;
+}
+body {
     padding: 0;
     margin: 0;
+    background-color: #E8E7EE;
+}
+
+
+@media (max-width: 966px) {
+    html {
+        font-size: 7px;
+    }
 }
