@@ -18,7 +18,16 @@ export class NavbarComponent implements OnInit {
     this.routes = [{
       path: '',
       name: 'home'
-    }]
+    },
+    {
+      path: 'projects',
+      name: 'projetos'
+    },
+    {
+      path: 'about',
+      name: 'sobre mim'
+    }
+  ]
   }
 
   toggleMenu(): void {

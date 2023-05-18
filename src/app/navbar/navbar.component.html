@@ -12,5 +12,10 @@
                 <a class="link" [href]="'/' + route.path">{{ route.name }}</a>
             </li>
         </ul>
+        <app-footer></app-footer>
     </div>
+</div>
+
+<div class="navigation desktop">
+    <a href="{{ route.path }}" *ngFor="let route of routes">{{ route.name }}</a>
 </div>

@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectsComponent } from './projects/projects.component';
 import { VscodeScreenComponent } from './commons/vscode-screen/vscode-screen.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VscodeScreenComponent } from './commons/vscode-screen/vscode-screen.com
     HomeComponent,
     NavbarComponent,
     ProjectsComponent,
-    VscodeScreenComponent
+    VscodeScreenComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
